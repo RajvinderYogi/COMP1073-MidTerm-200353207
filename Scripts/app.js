@@ -1,5 +1,6 @@
 // setup your IIFE (Immediately Invoked Function Expression)
 var travelReport = (function () {
+    
 
 //intro paragraph starts here
  var IntroParagraph = document.getElementById("IntroParagraph");
@@ -64,6 +65,23 @@ Gavdos.textContent=GavdosContent;
 //Amorgos Para starts here
 
 
+//Contact Inputs
+
+submit.addEventListener("click",function display(event){
+
+let firstName = document.getElementById("firstName").value;
+let lastName = document.getElementById("lastName").value;
+let email = document.getElementById("email").value;
+let comments = document.getElementById("comments").value;
+
+event.preventDefault();
+
+console.log(firstName);
+console.log(lastName);
+console.log(email);
+console.log(comments);
+
+});
 
 })();
 
